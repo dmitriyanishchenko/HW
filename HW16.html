@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta lang="ru">
+  <style type="text/css">
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <h1>Анкета опроса</h1>
+  </div>
+  <p><b>А</b> № п.п. домохозяйства в пределах помещений
+    <input type="number"></p>
+  <p><b>Б</b> № п.п. лица в пределах домохозяйства, на которое заполняется переписной лист
+    <input type="number"> </p>
+  <hr>
+  <p> <b>1 Первому по порядку члену домохозяйства отметьте <br>"записан первым"<br>
+      <input type="checkbox">записан первым<br><br>
+      Остальным членам домохозяйства отметьте, кем он <br>(она) приходится тому, кто записан
+      первым </b><br>
+    <input type="radio" name="kinship" value="sister, brother">сестра, брат
+    <input type="radio" name="kinship" value="granddaughter, grandson">внучка, внук<br>
+    <input type="radio" name="kinship" value="wife, husband">жена, муж
+    <input type="radio" name="kinship" value="mother-in-law,father-in-law">
+    свекровь, свёкор, тёща, тесть<br>
+    <input type="radio" name="kinship" value="daughter, son">дочь, сын
+    <input type="radio" name="kinship" value="daughter-in-law, son-in-law">
+    невестка(сноха), зять<br>
+    <input type="radio" name="kinship" value="mother, father">мать, отец
+    <input type="radio" name="kinship" value="grandmother, grandfather">бабушка, дедушка<br><br>
+    <input type="radio" name="kinship" value="other...">другая степень родства
+    <input type="radio" name="kinship" value="not_a_relative">не родственник<br>
+    <i>Запишите кто это</i><br>
+    <input tupe="text" name="kinship"><br>
+    <i>(например, опекаемый ребенок, наемный работник и т.д.)</i><br>
+    <hr>
+  </p>
+  <p>
+    <b>2 Ваш пол </b> <input type="radio" name="sex" value="Male">Мужской
+    <input type="radio" name="sex" value="Female">Женский<br>
+    <hr>
+  </p>
+  <p>
+    <b> 3 Дата вашего рождения</b><br><br><input type="date" name=date_of_birth> <br>
+    <hr>
+  </p>
+  <p>
+    <b>4 Место Вашего рождения</b><br><br>
+    <input type="text" name="place_of_birth"><br>
+    <i>Запишите наименование республики, края, области, автономной области,<br>
+      автономного округа, г.Москва, г.Санкт-Петербург для России( в т.ч. РСФСР)<br>
+      или наименование иностранного государства, которое оно <br>
+      имело на момент рождения опрашиваемого(в том числе союзной <br>
+      республики бывшего СССР)</i>
+    <hr>
+  </p>
+  <p>
+    <b> 5 Ваше состояние в браке</b><br>
+    состою в браке<input type="radio" name="marital_status"> Зарегистрирован ли ваш брак
+    <input type="radio" name="YesNo" value="yes">да
+    <input type="radio" name="YesNo" value="no">нет<br>
+    разведен(а) официально<input type="radio" name="marital_status"><br>
+    разошелся(лась)<input type="radio" name="marital_status"><br>
+    вдовец, вдова<input type="radio" name="marital_status"><br>
+    никогда не состоял(а) в браке<input type="radio" name="marital_status"><br>
+    <hr>
+  </p>
+  <p>
+    <b> 6 Ваше гражданство</b><br><br>
+    Российской Федерации<input type="radio" name="citizenship"><br><br>
+    <i>Для граждан иностранного государства и лиц с двойным <br>
+      гражданством запишите наименование государства</i><br>
+    <input type="text" name="citizenship"><br>
+    без гражданства <input type="radio" name="citizenship"><br>
+    <hr>
+  </p>
+  <p>
+    <b> 7 Ваша национальная принадлежность</b><br>
+    <i> По самоопределению в соответствии со ст.26 Конституции РФ</i><br>
+    <input type="text" name="nationality"> отказ от ответа <input type="checkbox"><br>
+    <hr>
+  </p>
+  <p>
+    <b> 8 ОБРАЗОВАНИЕ И ОБУЧЕНИЕ</b> <br>
+  </p>
+  <p>
+    <i> Для лиц в возрасте 10 лет и более</i><br>
+    <b> 8.1 Ваше образование</b><br>
+    <i> Отметьте только один вариант, соотвествующий<br>
+      наивысшему уровню полученного образования</i><br>
+    <input type="radio" name="education">начальное общее(начальное)<br>
+    <input type="radio" name="education">основное общее(неполное среднее)<br>
+    <input type="radio" name="education">среднее (полное) общее<br>
+    <input type="radio" name="education">начальное профессиональное<br>
+    <input type="radio" name="education">среднее профессиональное(среднее специальное)<br>
+    <input type="radio" name="education">неполное высшее профессиональное(незаконченное высшее)<br>
+    высшее профессиональное(высшее)<input type="radio" name="education">бакалавр
+    <input type="radio" name="education">специалист
+    <input type="radio" name="education">магистр <br>
+    <input type="radio" name="education">послевузовское профессинальное<br>
+    <input type="radio" name="education">не имею образования | Умеете ли вы читать и писать?
+    <input type="radio" name="literacy">да
+    <input type="radio" name="literacy">нет
+    <br><br>
+    <hr>
+  </p>
+  <p>
+    <i>Для лиц с высшим и послевузовским профессиональным образованием</i><br>
+    <b>8.2 Имеете ли вы ученую степень кандидата или доктора наук?</b><br>
+    кандидат наук <input type="radio" name="academic degree">
+    доктор наук <input type="radio" name="academic degree">
+    не имею <input type="radio" name="academic degree"><br>
+    <hr>
+  </p>
+  <p>
+    <i> Для лиц в возрасте 6-50 лет</i><br>
+    <b>8.3 Учитесь ли Вы в образовательном учреждеии?</b><br>
+    да <input type="radio" name="pupil"> нет <input type="radio" name="pupil"><br>
+    <hr>
+  </p>
+  <p>
+    <i>Для детей в возрасте до 10 лет, не посещающих школу</i><br>
+    <b>8.4 Посещает ли ребенок дошколное учреждение?</b><br>
+    да <input type="radio" name="preschooler">
+    нет <input type="radio" name="preschooler"><br>
+    <hr>
+  </p>
+  <p>
+    <b>9 ВЛАДЕНИЕ ЯЗЫКАМИ</b><br>
+    <hr>
+  </p>
+  <p>
+    <b>9.1 Владеете ли вы русским языком?</b><br>
+    да <input type="radio" name="speek_russian">
+    нет <input type="radio" name="speek_russian"><br>
+    <hr>
+  </p>
+  <p>
+    <b>9.2 Какими иными языками Вы владеете?</b><br>
+    <input type="text" name='lang_1'><br>
+    <input type="text" name='lang_2'><br>
+    <input type="text" name='lang_3'><br>
+    <hr>
+  </p>
+  <p>
+    <b>9.3 Ваш родной язык?</b><br>
+    <input type="text" name='native language'><br>
+    <hr>
+  </p>
+</body>
+
+</html>
