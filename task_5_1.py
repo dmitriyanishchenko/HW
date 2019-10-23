@@ -3,15 +3,18 @@
 # модулю элемент
 
 from random import randint
+
 i = 0
 j = 0
 old_matrix = []
 for i in range(0, 5):
     row = []
     for j in range(0, 5):
-         row.append(randint(1, 50))
+        row.append(randint(0, 10))
     old_matrix.append(row)
-print(old_matrix)
+
+for row_1 in old_matrix:
+    print(row_1)
 
 max_value = 0
 for i in range(0, 5):
@@ -19,17 +22,15 @@ for i in range(0, 5):
         k = abs(old_matrix[i][j])
         if k > max_value:
             max_value = old_matrix[i][j]
-print(max_value)
 
 matrix = []
 el = 0
 for i in range(0, 5):
     row = []
     for j in range(0, 5):
-         el = round(old_matrix[i][j]/max_value, 2)
-         row.append(str(el))
+        el = round(old_matrix[i][j] / max_value, 3)
+        row.append(str(el))
     matrix.append(row)
-print(matrix)
 
 for i in range(0, 5):
     print(' '.join(matrix[i]))
