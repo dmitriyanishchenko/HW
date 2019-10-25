@@ -3,13 +3,17 @@
 # модулю элемент
 
 from random import randint
+
+print("Введите интервал значений для матрицы")
+a = int(input("от:\n  \t"))
+b = int(input("до: "))
 i = 0
 j = 0
 old_matrix = []
 for i in range(0, 5):
     row = []
     for j in range(0, 5):
-         row.append(randint(1, 50))
+        row.append(randint(a, b))
     old_matrix.append(row)
 print(old_matrix)
 
@@ -26,8 +30,8 @@ el = 0
 for i in range(0, 5):
     row = []
     for j in range(0, 5):
-         el = round(old_matrix[i][j]/max_value, 2)
-         row.append(str(el))
+        el = round(old_matrix[i][j] / max_value, 2)
+        row.append(str(el))
     matrix.append(row)
 print(matrix)
 
