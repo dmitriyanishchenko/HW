@@ -1,2 +1,0 @@
-print('Dmitriy')
-print('Anishchenko')
