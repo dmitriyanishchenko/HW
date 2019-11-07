@@ -1,5 +1,5 @@
 # Дана целочисленная матрица А[n,m]. Посчитать количество элементов матрицы,
-# превосходящих среднее арифметическое значение элементов матрицы и сумма индексов которых четна.[02-4.2-BL23]
+# превосходящих среднее арифметическое значение элементов матрицы и сумма индексов которых четна
 from random import randrange
 
 print('Set the size of a two-dimensional array from n do m')
@@ -25,8 +25,7 @@ print(f'Arithmetic mean of matrix elements is {round(mean_summ_elem, 4)}')
 counter = 0
 for i, row in enumerate(matrix):
     for j, elem in enumerate(row):
-        print(f'{elem} - {i}{j}')
         if elem > mean_summ_elem and ((i + j) % 2 == 0):
-            print(elem)
+            print(f'element {elem} - index {i}:{j}')
             counter += 1
-print(f'The number of elements is equal {counter}')
+print(f'The number of matrix elements corresponding to the problem condition is {counter}')
