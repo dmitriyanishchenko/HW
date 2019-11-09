@@ -5,10 +5,9 @@
 m = int(input('Enter m-->:'))
 n = int(input('Enter n-->:'))
 
-for i in range(m, n+1):
+for i in range(m, n + 1):
     row = [i]
     for j in range(2, i):
-        if i%j == 0:
+        if i % j == 0:
             row.append(j)
     print(row)
-
