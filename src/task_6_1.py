@@ -18,13 +18,13 @@ while i > 0:
     if sign in sure_sign:
         if sign == '0':
             break
-        if sign == '+':
+        elif sign == '+':
             result = x + y
-        if sign == "-":
+        elif sign == "-":
             result = x - y
-        if sign == '*':
+        elif sign == '*':
             result = x * y
-        if sign == '/':
+        elif sign == '/':
             result = x / y
         print(result)
     else:
