@@ -53,78 +53,78 @@ def l_to_pint(value):  # 12. Литры в пинт(Брит.)
 
 while True:
 
-    list_oper = [[' 1. Inches to centimeters'],
-                  [' 2. Centimeters to inches'],
-                  [' 3. Miles to kilometers'],
-                  [' 4. Kilometers to miles'],
-                  [' 5. Pounds to kilograms'],
-                  [' 6. Kilograms to pounds'],
-                  [' 7. Ounces to grams'],
-                  [' 8. Grams to ounces'],
-                  [' 9. Gallons to liters'],
-                  ['10. Liters to gallons'],
-                  ['11. Pints to liters'],
-                  ['12. Liters to pints']]
+    list_operation = [[' 1. Inches to centimeters'],
+                      [' 2. Centimeters to inches'],
+                      [' 3. Miles to kilometers'],
+                      [' 4. Kilometers to miles'],
+                      [' 5. Pounds to kilograms'],
+                      [' 6. Kilograms to pounds'],
+                      [' 7. Ounces to grams'],
+                      [' 8. Grams to ounces'],
+                      [' 9. Gallons to liters'],
+                      ['10. Liters to gallons'],
+                      ['11. Pints to liters'],
+                      ['12. Liters to pints']]
 
-    for row in list_oper:
+    for row in list_operation:
         for elem in row:
             print(elem)
 
-    number_oper = int(input('Enter number operation from 1 to 12 or 0 to quit -->'))
-    if number_oper == 0:
+    number_operation = int(input('Enter number operation from 1 to 12 or 0 to quit -->'))
+    if number_operation == 0:
         break
-    valid_oper = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    valid_operation = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     value = int(input('Enter value -->'))
 
-    if number_oper not in valid_oper:
+    if number_operation not in valid_operation:
         print('Enter valid operations!')
         continue
 
-    elif number_oper == 1:
+    elif number_operation == 1:
         convert = in_to_cm(value)
         sim_1 = 'in'
         sim_2 = 'cm'
-    elif number_oper == 2:
+    elif number_operation == 2:
         convert = cm_to_in(value)
         sim_1 = 'cm'
         sim_2 = 'in'
-    elif number_oper == 3:
+    elif number_operation == 3:
         convert = mi_to_km(value)
         sim_1 = 'mi'
         sim_2 = 'km'
-    elif number_oper == 4:
+    elif number_operation == 4:
         convert = km_to_mi(value)
         sim_1 = 'km'
         sim_2 = 'mi'
-    elif number_oper == 5:
+    elif number_operation == 5:
         convert = lb_to_kg(value)
         sim_1 = 'lb'
         sim_2 = 'kg'
-    elif number_oper == 6:
+    elif number_operation == 6:
         convert = kg_to_lb(value)
         sim_1 = 'kg'
         sim_2 = 'lb'
-    elif number_oper == 7:
+    elif number_operation == 7:
         convert = oz_to_g(value)
         sim_1 = 'oz'
         sim_2 = 'g'
-    elif number_oper == 8:
+    elif number_operation == 8:
         convert = g_to_oz(value)
         sim_1 = 'g'
         sim_2 = 'oz'
-    elif number_oper == 9:
+    elif number_operation == 9:
         convert = gal_to_l(value)
         sim_1 = 'gal'
         sim_2 = 'l'
-    elif number_oper == 10:
+    elif number_operation == 10:
         convert = l_to_gal(value)
         sim_1 = 'l'
         sim_2 = 'gal'
-    elif number_oper == 11:
+    elif number_operation == 11:
         convert = pint_to_l(value)
         sim_1 = 'pint'
         sim_2 = 'l'
-    elif number_oper == 12:
+    else:
         convert = l_to_pint(value)
         sim_1 = 'l'
         sim_2 = 'pint'
