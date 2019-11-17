@@ -29,7 +29,9 @@ def show_matrix(matrix):
     :return: matrix row
     """
     for row in matrix:
-        print(row)
+        for elem in row:
+            print(elem, end=' ')
+        print()
 
 
 def summ_matrix(matrix):

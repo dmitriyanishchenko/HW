@@ -15,18 +15,21 @@ def create_matrix(n, random_from=1, random_to=9):
         matrix.append(row)
     return matrix
 
+
 def print_matrix(matrix):
     for row in matrix:
         for elem in row:
             print(elem, end=' ')
         print()
 
+
 def sum_matrix(matrix):
     summ = 0
     for row in matrix:
-        for elem in matrix:
+        for elem in row:
             summ += elem
     return summ
+
 
 matrix_a = create_matrix(5, 100, 199)
 print_matrix(matrix_a)
