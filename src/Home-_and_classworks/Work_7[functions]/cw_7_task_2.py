@@ -4,7 +4,7 @@
 
 
 while True:
-    n = input('Enter natural number to find its factorial, or press <0> to STOP--->')
+    n = input('Enter natural number to find its factorial, or press <0> to STOP --->\t')
     if n == '0':
         print('Goodbye ;-)')
         break
