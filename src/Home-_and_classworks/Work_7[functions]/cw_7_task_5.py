@@ -3,6 +3,11 @@
 
 
 def summ_arg(*args):
+    """
+    This function takes an input list with an undefined number of elements
+    :param args:
+    :return: the sum of all arguments according to the formula args[i] * i
+    """
     args = args[0]
     length = len(args)
     summ = 0
@@ -11,5 +16,6 @@ def summ_arg(*args):
     return summ
 
 
-list_a = [5, 4, 3, 2, 1]
-print(f'Сумма всех элементов списка {list_a} равна {summ_arg(list_a)}')
+list_a = [4, 3, 2, 1]
+result = summ_arg(list_a)
+print(f'Сумма равна {result}')
