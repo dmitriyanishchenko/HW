@@ -18,4 +18,4 @@ def summ_arg(*args):
 
 list_a = [4, 3, 2, 1]
 result = summ_arg(list_a)
-print(f'Сумма равна {result}')
+print(f'Sum of arguments by the formula args[i] * i in list {list_a} is {result}')
