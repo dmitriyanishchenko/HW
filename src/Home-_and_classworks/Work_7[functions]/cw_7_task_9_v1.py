@@ -1,6 +1,5 @@
 # Дан список чисел. Посчитать сколько раз встречается каждое число.
-# Подсказка: для хранения данных использовать словарь. Для проверки нахождения элемента в
-# словаре использовать метод get()
+
 from random import randint
 
 
@@ -20,3 +19,5 @@ def count_number(*args):
 list_number = [randint(0, 9) for i in range(50)]
 print(list_number)
 count_number(list_number)
+
+
