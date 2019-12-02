@@ -27,5 +27,5 @@ def full_func(*args, **kwargs):
             geometric_mean(*args)
 
 
-full_func(1, 2, 3, 4, 5, mean_type='arifm')
-full_func(1, 2, 3, 4, 5, mean_type='geom')
+full_func(1, 2, 3, 4, 5, 6, 7, 8, 9, mean_type='arifm')
+full_func(1, 2, 3, 4, 5, 6, 7, 8, 9, mean_type='geom')
