@@ -19,5 +19,3 @@ def count_number(*args):
 list_number = [randint(0, 9) for i in range(50)]
 print(list_number)
 count_number(list_number)
-
-

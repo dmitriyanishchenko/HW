@@ -80,4 +80,4 @@ def sleep_func(n):
     return 'a'
 
 
-print(sleep_func(2))
+print(sleep_func(5))
