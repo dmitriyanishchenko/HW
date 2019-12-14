@@ -21,61 +21,97 @@
 
 
 def in_to_cm(enter_value):
+    """
+    This function takes the distance in centimeters as input and converts it to inches
+    """
     translation_result = round(2.54 * enter_value, 4)
     return translation_result
 
 
 def cm_to_in(enter_value):
+    """
+    This function takes the distance in inches as input and converts them to centimeters
+    """
     translation_result = round(enter_value / 2.54, 4)
     return translation_result
 
 
 def mi_to_km(enter_value):
+    """
+    This function takes the distance in miles as input and converts it into kilometers
+    """
     translation_result = round(enter_value * 1.60934, 4)
     return translation_result
 
 
 def km_to_mi(enter_value):
+    """
+    This function takes the distance in kilometers as input and converts it into miles
+    """
     translation_result = round(enter_value / 1.60934, 4)
     return translation_result
 
 
 def lb_to_kg(enter_value):
+    """
+    This function takes mass in pounds as input and converts them to kilograms
+    """
     translation_result = round(enter_value * 0.45359237, 4)
     return translation_result
 
 
 def kg_to_lb(enter_value):
+    """
+    This function takes mass in kilograms as input and converts them to pounds
+    """
     translation_result = (enter_value / 0.45359237, 4)
     return translation_result
 
 
 def oz_to_g(enter_value):
+    """
+    This function takes as an input mass in ounces and converts them to grams
+    """
     translation_result = round(enter_value * 28.3495231, 4)
     return translation_result
 
 
 def g_to_oz(enter_value):
+    """
+    This function accepts mass in grams as input and converts them to ounces
+    """
     translation_result = round(enter_value / 28.3495231, 4)
     return translation_result
 
 
 def gal_to_l(enter_value):
+    """
+    This function takes the volume in gallons as input and converts them to liters
+    """
     translation_result = round(enter_value * 3.785411784, 4)
     return translation_result
 
 
 def l_to_gal(enter_value):
+    """
+    This function accepts the volume in liters as input and converts them to gallons
+    """
     translation_result = round(enter_value / 3.785411784, 4)
     return translation_result
 
 
 def pint_to_l(enter_value):
+    """
+    This function accepts the volume in pints as input and converts them to liters
+    """
     translation_result = round(enter_value / 2.113, 4)
     return translation_result
 
 
 def l_to_pint(enter_value):
+    """
+    This function accepts the volume in liters as input and converts them to pints
+    """
     translation_result = round(enter_value * 2.113, 4)
     return translation_result
 
