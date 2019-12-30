@@ -12,6 +12,7 @@ for i in range(0, n):
         row.append(randrange(0, 10))
     print(row)
     matrix.append(row)
+
 summ = 0
 for row in matrix:
     for elem in row:

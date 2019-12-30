@@ -2,7 +2,7 @@
 
 from random import randint
 
-n = int(input("Enter the dimension of the square matrix --->"))
+n = int(input("Enter the dimension of the square matrix --->\t"))
 
 matrix = []
 for i in range(0, n):
