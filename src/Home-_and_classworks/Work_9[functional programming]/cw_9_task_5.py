@@ -1,8 +1,8 @@
 # Дан список чисел. Найти произведение всех чисел, которые кратны 3.
-from datetime import datetime
+
 from functools import reduce
 
-numbers = [1, 2, 4, 4, 5, 4, 7, 8, 4]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 new_numbers = list(filter(lambda x: x % 3 == 0, numbers))
 
 if not new_numbers:
