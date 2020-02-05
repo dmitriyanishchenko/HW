@@ -11,5 +11,3 @@ count = 0
 for row in matrix:
     print(f'{count} - {row}')
     count += 1
-
-# print([[f'{count} - {row}' for row in matrix] for count in range(n)])
