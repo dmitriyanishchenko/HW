@@ -1,25 +1,13 @@
-# Рассчитать значение х определив и использовав необходимую функции.
+# Рассчитать значение х определив и использовав необходимую функцию.
 # х = ((sqrt(5)+5)/2)  +  ((sqrt(12)+12)/2) + ((sqrt(19)+19)/2)
 
-
-def func_sqrt_elem(*args):
-    args = list(args)
-    print(args)
-    res_list = []
-    for elem in args:
-        res = round((elem ** 0.5 + elem) / 2, 5)
-        res_list.append(res)
-    return res_list
-
-
-def summ_el(*args):
-    args = args[0]
+def my_func(*args):
     summ = 0
     for elem in args:
-        summ += elem
+        res = round((elem ** 0.5 + elem) / 2, 3)
+        summ += res
     return summ
 
 
-result_list = func_sqrt_elem(5, 12, 19)
-print(result_list)
-print(summ_el(result_list))
+a = my_func(5, 12, 19)
+print(a)

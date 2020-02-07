@@ -1,5 +1,7 @@
+# lambda выражения
+
+print((lambda x, y, z: x + y + z)(1, 2, 3))
+
 # Создать lambda функцию, которая принимает на вход имя и выводит его в формате “Hello, {name}”
 
-name = input('Enter your name --->\t')
-func = lambda x, y: x + y
-print(func('Hello, ', name))
+print((lambda name: f'Hello, {name}')('Max'))

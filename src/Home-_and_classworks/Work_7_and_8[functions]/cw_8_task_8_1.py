@@ -3,29 +3,31 @@
 # в виде трех функций.
 
 
-def average(*args):
-    summ = 0
-    for i in range(len(args)):
-        summ += args[i]
-    result = summ / len(args)
-    return print(f'Average in tuple {args} is {result}')
+
+def arif(*args):
+    summ = sum(args)
+    arif = summ / len(args)
+    return arif
 
 
-def geometric_mean(*args):
-    geom = 1
-    for i in range(len(args)):
-        geom *= args[i]
-    result = geom / len(args)
-    return print(f'Geometric mean in tuple {args} is {result}')
+def geom(*args):
+    mult = 1
+    for elem in args:
+        mult *= elem
+    geom = mult / len(args)
+    return geom
 
 
 def full_func(*args, **kwargs):
-    for item in kwargs.values():
-        if item == 'arifm':
-            average(*args)
-        elif item == 'geom':
-            geometric_mean(*args)
+    for key, value in kwargs.items():
+        if value == 'arif':
+            result = arif(*args)
+        elif value == 'geom':
+            result = geom(*args)
+    return result
 
 
-full_func(1, 2, 3, 4, 5, 6, 7, 8, 9, mean_type='arifm')
-full_func(1, 2, 3, 4, 5, 6, 7, 8, 9, mean_type='geom')
+result_func_a = full_func(1, 2, 3, 4, mean_type='arif')
+result_func_g = full_func(1, 2, 3, 4, mean_type='geom')
+print(result_func_a)
+print(result_func_g)
