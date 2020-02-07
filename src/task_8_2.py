@@ -1,6 +1,7 @@
 # Дан список чисел. Посчитать сколько раз встречается каждое число
 
-def counter(*args):
+
+def counter_num(*args):
     count = {}
     for elem in args:
         if elem in count:
@@ -8,6 +9,6 @@ def counter(*args):
         else:
             count[elem] = 1
     for key, value in count.items():
-        print(f'Number {key} occurs {value} times')
+        return print(f'Number {key} occurs {value} times')
 
-number = counter(1, 8, 7, 1, 6, 5, 2, 8)
+number = counter_num(1, 8, 7, 1, 6, 5, 2, 8)
