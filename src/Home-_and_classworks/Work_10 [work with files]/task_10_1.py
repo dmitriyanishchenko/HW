@@ -5,7 +5,7 @@
 def main():
     with open('test_10_1.txt', 'a') as my_file:
         for i in range(3):
-            my_file.write(input('enter line -->') + '\n')
+            my_file.write(input(f'enter {i + 1} line -->') + '\n')
 
     my_file.close()
 
